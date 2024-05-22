@@ -64,8 +64,8 @@ public class FolhaPGTO {
         // imprimindo 
         hora2.imprimir_H();
 
-        // horista paga inss e irpf
-        //
+        
+        
 
 
 
