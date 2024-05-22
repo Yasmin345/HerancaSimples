@@ -32,7 +32,7 @@ public class Mensalista extends Empregado {
         }else if (cargo.equals("Pleno")){
             salario = 3500;
 
-        }else {
+        }else if (cargo.equals("Senior")) {
             salario = 5500;
         }
     }
@@ -44,9 +44,9 @@ public class Mensalista extends Empregado {
         System.out.println("Nome: " + getNome());
         System.out.println("Endereço: " + getEndereço());
         System.out.println("Cargo: " + getCargo());
-        System.out.println("Salario: " + getSalario());
-        System.out.println("Valor Inss: " + calcularInss());
-        System.out.println("Valor Irpf: " + calcularIrpf());
+        System.out.printf("Salario: %.2f\n", getSalario());
+        System.out.printf("Valor Inss: %.2f\n", calcularInss());
+        System.out.printf("Valor Irpf: %.2f \n" , calcularIrpf());
         System.out.println("=========================\n");
     }
 

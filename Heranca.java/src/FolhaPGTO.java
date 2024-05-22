@@ -18,7 +18,7 @@ public class FolhaPGTO {
         men1.calcularIrpf();
 
         // imprimindo 
-        men1.imprimir_M();
+        men1.imprimir_M();  
 
         men2 = new Mensalista("Jonas", "Avenida azul","Pleno");
 
@@ -36,7 +36,7 @@ public class FolhaPGTO {
 
 
         //--------------------- empregados horistas---------------------------------------
-        hora1 = new Horista("Jade", "Travessia 4", 30);
+        hora1 = new Horista("Jade", "Travessia 4", 30,10.50);
 
         // calculando salario 
         hora1.calcularSalario();
@@ -50,7 +50,7 @@ public class FolhaPGTO {
         // imprimindo 
         hora1.imprimir_H();
 
-        hora2 = new Horista("Bruno", "Estrada polo", 70);
+        hora2 = new Horista("Bruno", "Estrada polo", 70,8.17);
 
         // calculando salario 
         hora2.calcularSalario();

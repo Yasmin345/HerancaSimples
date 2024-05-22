@@ -1,10 +1,12 @@
 public class Horista extends Empregado {
     // declarando atributos
     private double horas;
+    private double vl_horas;
 
     // construtores
-    public Horista(String nome, String endereco, double horas) {
+    public Horista(String nome, String endereco, double horas, double vl_horas) {
         super(nome, endereco);
+        this.vl_horas = vl_horas;
         
         // atributo declarado na classe local 
         this.horas = horas;
@@ -25,7 +27,7 @@ public class Horista extends Empregado {
 
     // método calculo de salario horista
     public void calcularSalario(){
-        salario = horas * 50;
+        salario = horas * vl_horas;
     }
 
     // método para imprimir 
@@ -33,9 +35,8 @@ public class Horista extends Empregado {
         System.out.println("=========================");
         System.out.println("Nome: " + getNome());
         System.out.println("Endereço: " + getEndereço());
-        System.out.println("Salario: " + getSalario());
-        System.out.println("Valor Inss: " + calcularInss());
-        System.out.println("Valor Irpf: " + calcularIrpf());
+        System.out.printf("Salario: %.2f\n", getSalario());
+        System.out.printf("Valor Inss: %.2f\n", calcularInss());
         System.out.println("=========================\n");
 
 
